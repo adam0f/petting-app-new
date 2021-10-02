@@ -20,7 +20,7 @@ contract LazyPetterResolver {
     {
         uint256 lastExecuted = IPetGotchi(pet).lastExecuted();
 
-        canExec = (block.timestamp - lastExecuted) > 43200;
+        canExec = (block.timestamp - lastExecuted) > 43201;
 
         execPayload = abi.encodeWithSelector(
             IPetGotchi.petGotchis.selector

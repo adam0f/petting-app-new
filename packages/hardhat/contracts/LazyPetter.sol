@@ -25,7 +25,7 @@ contract LazyPetter is PokeMeReady {
 
   function petGotchis() external onlyPokeMe {
     require(
-      ((block.timestamp - lastExecuted) > 43200),
+      ((block.timestamp - lastExecuted) > 43201),
       "LazyPetter: pet: 12 hours not elapsed"
     );
 
